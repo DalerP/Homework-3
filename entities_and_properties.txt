@@ -1,0 +1,57 @@
+/*
+
+Entities:
+Books
+Authors
+Genres
+Publishers
+Editors
+Customers
+Orders
+
+Properties:
+Name-for Authors, Books, Editors, Genres, Customers and Publishers
+DateOfBirth-for Authors and Customers
+Adress-for Authors, Publishers, Editors and Customers
+Contact-for Authors, Publishers, Editors and Customers
+Price-for Books
+IssueDate-for Books
+Publisher-for Books
+Genres-for Books
+Royalty-for each Author-Book pair
+OrderDate-for Orders
+ShippedDate-for Orders
+Quantity-for Orders
+Discount-for Orders
+Books-for Orders
+Authors-for Books
+Books-for Authors
+Editors-for Books
+Orders-for Customers
+
+*/
+
+
+/*
+
+PK1 BookID-for Books
+PK2 AuthorID-for Authors
+PK3 EditorID-for Editors
+PK4 PublisherID-for Publishers
+PK5 GenreID-for Genres
+PK6 OrderID-for Orders
+PK7 CustomerID-for Customers
+
+*/
+
+
+/*
+
+Authors, Books, N:N
+Books, Genres, N:1
+Books, Publishers, N:1
+Books, Editors, N:N
+Books, Orders, N:N
+Orders, Customers, N:1
+
+*/
